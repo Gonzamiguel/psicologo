@@ -1,0 +1,51 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+
+.imagen-redondeada {
+    border-top-left-radius: 50px;
+    /* Redondeado normal en el lado izquierdo */
+    border-bottom-left-radius: 50px;
+    /* Redondeado normal en el lado izquierdo */
+    border-top-right-radius: 100px;
+    /* Redondeado considerable en el lado derecho */
+    border-bottom-right-radius: 100px;
+    /* Redondeado considerable en el lado derecho */
+}
+
+.custom-button {
+    border: 2px solid transparent;
+    /* Asegúrate de que el botón tenga un borde inicialmente */
+    transition: border-color 0.3s ease;
+    /* Añade una transición suave para el cambio de color */
+}
+
+.custom-button:hover {
+    border-color: #7326E2;
+    /* Cambia el color del borde al color deseado en hover */
+}
+
+.faq {
+    margin-bottom: 15px;
+
+}
+
+.question {
+    cursor: pointer;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.answer {
+    display: none;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-top: none;
+    border-radius: 0 0 5px 5px;
+}
+
+.faq.open .answer {
+    display: block;
+}
