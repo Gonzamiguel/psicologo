@@ -20,8 +20,6 @@ function closeMenu() {
 }
 
 
-
-
 document.addEventListener('DOMContentLoaded', function() {
     // Selecciona todos los elementos con la clase 'question'
     var questions = document.querySelectorAll('.question');
