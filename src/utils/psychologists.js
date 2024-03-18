@@ -3,7 +3,9 @@ const psychologists = [
       name: "Santiago Miguel",
       phone: "+54 9 2645032484",
       address: "Sergio Boggian 4188 oeste",
-      img : "../imagenes/mujer-carnet.jpg"
+      img : "../imagenes/mujer-carnet.jpg",
+      profesional : "Hombre",
+      tipo : "Adultos"
     },
     {
       name: "Santiago Miguel",
@@ -31,7 +33,6 @@ const psychologists = [
     const cardTemplate = document.getElementById("cardTemplate");
 
     psychologists.forEach((element) => {
-   
 
       const clone = cardTemplate.content.cloneNode(true);
       clone.querySelector("h3").textContent = element.name;

@@ -20,13 +20,13 @@ function closeMenu() {
 }
 
 
-document.addEventListener('DOMContentLoaded', function() {
+document.addEventListener('DOMContentLoaded', function () {
     // Selecciona todos los elementos con la clase 'question'
     var questions = document.querySelectorAll('.question');
 
     // Agrega un controlador de eventos a cada pregunta
-    questions.forEach(function(question) {
-        question.addEventListener('click', function() {
+    questions.forEach(function (question) {
+        question.addEventListener('click', function () {
             // Encuentra el elemento 'answer' asociado con la pregunta
             var answer = this.nextElementSibling;
 
@@ -34,7 +34,7 @@ document.addEventListener('DOMContentLoaded', function() {
             if (answer.style.display === 'none') {
                 // Cierra todas las respuestas abiertas
                 var openAnswers = document.querySelectorAll('.answer[style="display: block;"]');
-                openAnswers.forEach(function(openAnswer) {
+                openAnswers.forEach(function (openAnswer) {
                     openAnswer.style.display = 'none';
                 });
 
@@ -48,11 +48,11 @@ document.addEventListener('DOMContentLoaded', function() {
     });
 });
 
-document.addEventListener('DOMContentLoaded', function() {
+document.addEventListener('DOMContentLoaded', function () {
     const navLinks = document.querySelectorAll('nav a');
 
-    navLinks.forEach(function(link) {
-        link.addEventListener('click', function(e) {
+    navLinks.forEach(function (link) {
+        link.addEventListener('click', function (e) {
             e.preventDefault(); // Evita el comportamiento de desplazamiento predeterminado
             const targetSection = document.querySelector(this.getAttribute('href'));
             targetSection.scrollIntoView({ behavior: 'smooth' });
