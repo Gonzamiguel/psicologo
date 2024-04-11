@@ -1,201 +1,193 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Psicologos</title>
-    <link rel="stylesheet" href="../output.css" />
-    <link
-      rel="stylesheet"
-      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0"
-    />
-    <link
-      rel="stylesheet"
-      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0"
-    />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link rel="stylesheet" href="../dropdown.css">
-    <link
-      href="https://fonts.googleapis.com/css2?family=Besley:ital,wght@0,400..900;1,400..900&display=swap"
-      rel="stylesheet"
-    />
 
-    <style>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Psicologos</title>
+  <link rel="stylesheet" href="../output.css" />
+  <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+  <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link rel="stylesheet" href="../dropdown.css">
+  <link href="https://fonts.googleapis.com/css2?family=Besley:ital,wght@0,400..900;1,400..900&display=swap"
+    rel="stylesheet" />
+</head>
 
-
-    </style>
-  </head>
-  <body>
-    <nav
-      class="p-5 md:flex md:items-center md:justify-between bg-[#9742D9] text-white"
-    >
-      <div class="flex justify-around items-center mt-3">
-        <a href="#header">
-          <span
-            ><img class="h-8 w-8" src="../imagenes/logo-solo.jpeg" alt=""
-          /></span>
-        </a>
-        <span
-          class="text-3xl cursor-pointer mx-2 md:hidden block"
-          onclick="toggleMenu()"
-        >
-          <span class="material-symbols-outlined"> menu </span>
-        </span>
-      </div>
-      <ul
-        class="md:flex md:items-center z-[1000] md:static absolute bg-[#9742D9] w-full left-0 md:w-auto md:py-0 py-4 md:pl-0 pl-7 md:opacity-100 opacity-0 top-[-400px] transition-all ease-in duration-500 md:top-auto md:justify-end"
-      >
-        <!-- Ajustamos la alineación a la derecha en dispositivos móviles -->
-        <li class="mx-4 my-6 md:my-0">
-          <a
-            href="../index.html"
-            class="text-[#f5f5f5] hover:text-[#EE96BB] text-[18px] py-1 px-3 font-besley font-normal"
-            onclick="closeMenu()"
-            >Inicio</a
-          >
-        </li>
-        <li class="mx-4 my-6 md:my-0">
-          <a
-            href="#psicologos"
-            class="text-[#f5f5f5] hover:text-[#EE96BB] text-[18px] py-1 px-3 font-besley font-normal"
-            onclick="closeMenu()"
-            >Psicologos</a
-          >
-        </li>
-        <li class="mx-4 my-6 md:my-0">
-          <a
-            class="text-[#f5f5f5] hover:text-[#EE96BB] text-[18px] py-1 px-3 font-besley font-normal"
-            href=""
-            onclick="closeMenu()"
-            >Servicios</a
-          >
-        </li>
-        <li class="mx-4 my-6 md:my-0">
-          <a
-            class="text-[#f5f5f5] hover:text-[#EE96BB] text-[18px] py-1 px-3 font-besley font-normal"
-            href="../index.html"
-            onclick="closeMenu()"
-            >Nosotros</a
-          >
-        </li>
-        <li class="mx-4 my-6 md:my-0">
-          <a
-            class="text-[#f5f5f5] hover:text-[#EE96BB] text-[18px] py-1 px-3 font-besley font-normal"
-            href="../index.html"
-            onclick="closeMenu()"
-            >Preguntas</a
-          >
-        </li>
-      </ul>
-    </nav>
-    <header class="bg-img1 h-[250px]">
-      <div class="flex flex-col justify-center items center">
-        <h2
-          class="flex justify-start mt-[70px] ml-10 font-besley font-normal text-[40px] leading-[50px] text-white"
-        >
-          Psicólogos
-        </h2>
-        <div class="flex justify-start mt-2 ml-10">
-          <button class="pr-2">
-            <a
-              href="../index.html"
-              class="text-[18px] leading-7 font-normal font-besley text-white"
-              >Inicio /</a
-            >
-          </button>
-          <p
-            class="font-besley font-normal text-[18px] leading-7 text-[#9742D9]"
-          >
-            Psicólogos
-          </p>
-        </div>
-      </div>
-    </header>
-    <main>
-      <div class="flex justify-center mt-6">
-     
-        <button
-      
-          class="custom-button text-white inline-flex items-center justify-center h-8 md:h-12 md:px-6 px-1 md:mr-6 font-medium tracking-wider rounded shadow-md bg-[#7326E2] font-besley"
-        >
-          Sexo del profesional
+<body>
+  <nav class="p-5 md:flex md:items-center md:justify-between bg-[#9742D9] text-white">
+    <div class="flex justify-around items-center mt-3">
+      <a href="#header">
+        <span><img class="h-8 w-8" src="../imagenes/logo-solo.jpeg" alt="" /></span>
+      </a>
+      <span class="text-3xl cursor-pointer mx-2 md:hidden block" onclick="toggleMenu()">
+        <span class="material-symbols-outlined"> menu </span>
+      </span>
+    </div>
+    <ul
+      class="md:flex md:items-center z-[1000] md:static absolute bg-[#9742D9] w-full left-0 md:w-auto md:py-0 py-4 md:pl-0 pl-7 md:opacity-100 opacity-0 top-[-400px] transition-all ease-in duration-500 md:top-auto md:justify-end">
+      <!-- Ajustamos la alineación a la derecha en dispositivos móviles -->
+      <li class="mx-4 my-6 md:my-0">
+        <a href="../../index.html"
+          class="text-[#f5f5f5] hover:text-[#EE96BB] text-[18px] py-1 px-3 font-besley font-normal"
+          onclick="closeMenu()">Inicio</a>
+      </li>
+      <li class="mx-4 my-6 md:my-0">
+        <a href="#psicologos" class="text-[#f5f5f5] hover:text-[#EE96BB] text-[18px] py-1 px-3 font-besley font-normal"
+          onclick="closeMenu()">Psicologos</a>
+      </li>
+      <li class="mx-4 my-6 md:my-0">
+        <a class="text-[#f5f5f5] hover:text-[#EE96BB] text-[18px] py-1 px-3 font-besley font-normal" href="../../index.html"
+          onclick="closeMenu()">Servicios</a>
+      </li>
+      <li class="mx-4 my-6 md:my-0">
+        <a class="text-[#f5f5f5] hover:text-[#EE96BB] text-[18px] py-1 px-3 font-besley font-normal"
+          href="../../index.html" onclick="closeMenu()">Nosotros</a>
+      </li>
+      <li class="mx-4 my-6 md:my-0">
+        <a class="text-[#f5f5f5] hover:text-[#EE96BB] text-[18px] py-1 px-3 font-besley font-normal"
+          href="../../index.html" onclick="closeMenu()">Preguntas</a>
+      </li>
+    </ul>
+  </nav>
+  <header class="bg-img1 h-[250px]">
+    <div class="flex flex-col justify-center items center">
+      <h2 class="flex justify-start mt-[70px] ml-10 font-besley font-normal text-[40px] leading-[50px] text-white">
+        Psicólogos
+      </h2>
+      <div class="flex justify-start mt-2 ml-10">
+        <button class="pr-2">
+          <a href="./psicologos.html" class="text-[18px] leading-7 font-normal font-besley text-white">Inicio /</a>
         </button>
+        <p class="font-besley font-normal text-[18px] leading-7 text-[#9742D9]">
+          Psicólogos
+        </p>
+      </div>
+    </div>
+  </header>
+  <main>
+    <section class="flex flex-col lg:flex-row justify-center m-8 md:mt-10 gap-y-5 md:gap-x-10">
+      <div class="custom-button text-white inline-flex items-center justify-center h-8 md:h-12 md:px-3 px-1 md:mr-6 font-medium tracking-wider rounded shadow-md bg-[#7326E2] font-besley">
+      <label for="sexoProfesional">Sexo del Profesional:</label>
+      <select class="bg-[#7326E2]" id="sexoProfesional">
+        <option value="masculino">Seleccione</option>
+        <option value="masculino">Masculino</option>
+        <option value="femenino">Femenino</option>
+        <option value="indistinto">Indistinto</option>
+      </select>
+    </div>
+    <div class="custom-button text-white inline-flex items-center justify-center h-8 md:h-12 md:px-3 px-1 md:mr-6 font-medium tracking-wider rounded shadow-md bg-[#7326E2] font-besley">
+      <label for="tipoTerapia">Tipo de Terapia:</label>
+      <select class="bg-[#7326E2]" id="tipoTerapia">
+        <option value="masculino">Seleccione</option>
+        <option value="ninos">Niños</option>
+        <option value="adolescentes">Adolescentes</option>
+        <option value="adultos">Adultos</option>
+        <option value="discapacidad">Discapacidad</option>
+      </select>
+    </div>
+
+    <button class="custom-button text-white inline-flex items-center justify-center h-8 md:h-12 md:px-3 px-1 md:mr-6 font-medium tracking-wider rounded shadow-md bg-[#7326E2] hover:text-[#7326E2] hover:bg-gray-200 font-besley" id="botonBuscar">Buscar</button>
+    </section>
     
-       <!-- Prueba -->
-       <div class="box">
-        <div   class="dropdown custom-button text-white inline-flex items-center justify-center h-8 md:h-12 md:px-6 px-1 md:mr-6 font-medium tracking-wider rounded shadow-md  font-besley ">Sexo del profesional
-            <span class="left-icon"></span>
-            <span class="right-icon"></span>
-            <div class="items ">
-                <a class="shadow-md" href="#" style="--i:1;"><span></span>Hombre</a>
-                <a class="shadow-md" href="#" style="--i:2;"><span></span>Mujer</a>
-     
-            </div>
-        </div>
-        <div class="relative items-center w-full px-5 py-12 mx-auto md:px-12 lg:px-24 max-w-7xl">
-            <div class="grid w-full grid-cols-1 gap-6 mx-auto lg:grid-cols-3">
-                <div class="p-6 shadow-lg rounded-md">
-                    <img class="object-cover object-center w-full mb-8" src="../imagenes/mujer-carnet.jpg" alt="blog">
-                    <h3 class="flex justify-center text-xl font-semibold leading-none tracking-tighter text-neutral-600 mt-7">Santiago Miguel</h3>
-                    <div class="flex space-x-4 mb-3 mt-3">
-                        <span class="material-symbols-outlined" style="color: #9742D9; font-size: 32px;">
-                            call
-                        </span>
-                        <p class="text-[16px] leading-7 font-light">+54 9 2645032484</p>
-                    </div>
-                    <div class="flex space-x-4">
-                        <span class="material-symbols-outlined" style="color: #9742D9; font-size: 32px;">
-                        home
-                        </span><p class="text-[16px] leading-7 font-light">Sergio Boggian 4188 oeste</p>
-                    </div>
 
-                </div>
-                <div class="p-6 shadow-lg rounded-md">
-                    <img class="object-cover object-center w-full mb-8" src="../imagenes/hombre-carnet.jpg" alt="blog">
-                    <h3 class="flex justify-center text-xl font-semibold leading-none tracking-tighter text-neutral-600 mt-7">Santiago Miguel</h3>
-                    <div class="flex space-x-4 mb-3 mt-3">
-                        <span class="material-symbols-outlined" style="color: #9742D9; font-size: 32px;">
-                            call
-                        </span>
-                        <p class="text-[16px] leading-7 font-light">+54 9 2645032484</p>
-                    </div>
-                    <div class="flex space-x-4">
-                        <span class="material-symbols-outlined" style="color: #9742D9; font-size: 32px;">
-                        home
-                        </span><p class="text-[16px] leading-7 font-light">Sergio Boggian 4188 oeste</p>
-                    </div>
-                    
-                </div>
-                <div class="p-6 shadow-lg rounded-md">
-                    <img class="object-cover object-center w-full mb-8" src="../imagenes/mujer-carnet.jpg" alt="blog">
-                    <h3 class="flex justify-center text-xl font-semibold leading-none tracking-tighter text-neutral-600 mt-7">Santiago Miguel</h3>
-                    <div class="flex space-x-4 mb-3 mt-3">
-                        <span class="material-symbols-outlined" style="color: #9742D9; font-size: 32px;">
-                            call
-                        </span>
-                        <p class="text-[16px] leading-7 font-light">+54 9 2645032484</p>
-                    </div>
-                    <div class="flex space-x-4">
-                        <span class="material-symbols-outlined" style="color: #9742D9; font-size: 32px;">
-                        home
-                        </span><p class="text-[16px] leading-7 font-light">Sergio Boggian 4188 oeste</p>
-                    </div>
-                    
-                </div>
-            </div>
-        </div>
-    </main>
-    <script>
-      const dropdown = document.querySelector('.dropdown');
-  
-  dropdown.addEventListener('click', () => {
-      dropdown.classList.toggle('active');
-  });
-    </script>
-    <script src="../utils/psychologists.js"></script>
-    <script src="../utils/burguer.js"></script>
-    <script src="../utils/filtros.js"></script>
+    <div class="relative items-center w-full px-5 py-12 mx-auto md:px-12 lg:px-24 max-w-7xl">
+      <div id="cardsContainer" class="grid w-full grid-cols-1 gap-6 mx-auto lg:grid-cols-3">
+        <!-- Aquí se generarán dinámicamente los cards de los psicólogos -->
+      </div>
+    </div>
+    
 
-  </body>
+
+    <footer class="bg-gray-200" aria-labelledby="footer-heading">
+      <div class="flex flex-col md:flex-row justify-around gap-10">
+          <div class="m-5 md:mt-5">
+              <ul class="">
+                  <li class="mb-3">
+                      <p class="text-[22px] leading-6 font-normal font-besley">Contacto</p>
+                  </li>
+                  <li class="flex space-x-4 mb-3">
+                      <span class="material-symbols-outlined" style="color: #9742D9; font-size: 32px;">
+                          call
+                      </span>
+                      <p class="text-[16px] leading-7 font-light">+54 9 2645032484</p>
+                  </li>
+                  <li class="flex space-x-4">
+                      <span class="material-symbols-outlined" style="color: #9742D9; font-size: 32px;">
+                          mail
+                      </span>
+                      <p class="text-[16px] leading-7 font-light">correoPsicovia@gmail.com</p>
+                  </li>
+              </ul>
+          </div>
+          <div class="m-5 md:mt-">
+              <ul>
+                  <li class="mb-3">
+                      <p class="text-[22px] leading-6 font-normal font-besley">Accesos</p>
+                  </li>
+                  <li class="flex space-x-4 mb-4">
+                      <a href="./psicologos.html">
+                          <p class="text-[16px] leading-7 font-light">Psicologos</p>
+                      </a>
+                  </li>
+                  <li class="flex space-x-4 mb-4">
+                      <a href="../index.html">
+                          <p class="text-[16px] leading-7 font-light">Nosotros</p>
+                      </a>
+                  </li>
+                  <li>
+                      <a href="../index.html">
+                          <p class="text-[16px] leading-7 font-light">Preguntas frecuentes</p>
+                      </a>
+                  </li>
+              </ul>
+          </div>
+          <div class="m-5 md:mt-5">
+              <ul>
+                  <li class="mb-3">
+                      <p class="text-[22px] leading-6 font-normal font-besley">Profesionales</p>
+                  </li>
+                  <li class="flex space-x-4 mb-4">
+                      <p class="text-[16px] leading-7 font-light">Trabaja con nosotros</p>
+                  </li>
+                  <li class="flex space-x-4 mb-4">
+                      <button
+                          class="custom-button text-white inline-flex items-center justify-center h-8 md:h-12 md:px-3 px-1 md:mr-6 font-medium tracking-wider rounded shadow-md bg-[#7326E2] hover:text-[#7326E2] hover:bg-gray-200 font-besley">
+                          <a href="https://wa.me/2645032484" target="_blank">Alquiler de consultorio</a>
+                      </button>
+                  </li>
+              </ul>
+          </div>
+      </div>
+      <hr class="border-t-2 border-solid border-[#9742D9] mt-5 mx-8">
+      <div class="px-5 py-12 max-w-7xl sm:px-6 md:flex md:items-center md:justify-between">
+          <div class="flex justify-center mb-8 space-x-6 md:order-last md:mb-0">
+              <a target="_blank" href="https://www.instagram.com/espacio.psicovia/">
+                  <img src="./imagenes/3721672-instagram_108066.png" alt="">
+              </a>
+              <a target="_blank" class="fixed bottom-0 right-0 mx-6 my-6" href="https://wa.me/2645153542">
+                  <img class="" src="./imagenes/ws-logo.png" alt="">
+              </a>
+          </div>
+          <div class="mt-8 md:mt-0 md:order-1">
+              <span class="mt-2 text-sm font-light text-gray-500">
+                  Copyright ©
+                  <a target="_blank" href="https://gonzamiguel.github.io/portfolio/"
+                      class="mx-2 text-wickedblue hover:text-gray-500" rel="noopener noreferrer">@GM-Dev</a>. Since
+                  2024
+              </span>
+          </div>
+      </div>
+  </footer>
+
+  </main>
+  </script>
+  <script src="../utils/psicologos.js"></script>
+  <script src="../utils/burguer.js"></script>
+
+</body>
+
 </html>

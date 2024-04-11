@@ -49,7 +49,7 @@ document.addEventListener('DOMContentLoaded', function () {
 });
 
 document.addEventListener('DOMContentLoaded', function () {
-    const navLinks = document.querySelectorAll('nav a');
+    const navLinks = document.querySelectorAll('nav a:not([href="./src/pages/psicologos.html"]):not([href="../../index.html"])');
 
     navLinks.forEach(function (link) {
         link.addEventListener('click', function (e) {
@@ -59,4 +59,6 @@ document.addEventListener('DOMContentLoaded', function () {
         });
     });
 });
+
+
 
